@@ -16,7 +16,7 @@ class TikTok:
             self.close('Integer expected.')
 
         try:
-            self.video_id = input('> TikTok Video URL: ').split('/')[5]
+            self.video_id = input('> TikTok Video URL: https://m.tiktok.com/v/6855862512315944197.html?_d=secCgsIARCbDRgBIAIoARI%2BCjwQVQ2ny%2BR%2BmXL4o%2F988cP3tjFaiEfbqg6ajizAcAxCfrNw%2BJ48kE3c%2BUgKy4UKxjVHepx51OsibMjbiS8aAA%3D%3D&language=en&preview_pb=0&share_item_id=6855862512315944197').split('/')[5]
         except IndexError:
             self.close(
                 'Invalid TikTok URL format.\nFormat expected: https://www.tiktok.com/@username/vide'
